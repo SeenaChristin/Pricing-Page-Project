@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap");
+    </style>
+
+    <title>Pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <div>Our Pricing</div>
+      </div>
+      <div class="mode" onclick="changeMode(event)">
+        <span>Anually</span>
+        <input type="checkbox" id="switch" />
+        <label for="switch">Toggle</label>
+        <span>Monthly</span>
+      </div>
+      <div class="main">
+        <div id="basic" class="subscription">
+          <div class="name">Basic</div>
+          <div class="price ul">$199.99</div>
+          <div class="storage ul">50 GB Storage</div>
+          <div class="users ul">2 Users allowed</div>
+          <div class="limit ul">Send Upto 3 GB</div>
+          <div class="btn">
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div id="prof" class="subscription">
+          <div class="name">Professional</div>
+          <div class="price ul">$249.99</div>
+          <div class="storage ul">1 TB Storage</div>
+          <div class="users ul">5 Users allowed</div>
+          <div class="limit ul">Send Upto 10 GB</div>
+          <div class="btn">
+            <button>Learn More</button>
+          </div>
+        </div>
+        <div id="master" class="subscription">
+          <div class="name">Master</div>
+          <div class="price ul">$399.99</div>
+          <div class="storage ul">2 TB Storage</div>
+          <div class="users ul">10 Users allowed</div>
+          <div class="limit ul">Send Upto 20 GB</div>
+          <div class="btn">
+            <button>Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+<!-- Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
+    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
+    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
+    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
+    Send up to 20 GB Learn More -->
